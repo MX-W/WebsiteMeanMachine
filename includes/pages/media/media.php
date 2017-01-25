@@ -10,6 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <div>Schau dir doch mal die Fotos an</div>
         <?php
         // put your code here
         ?>

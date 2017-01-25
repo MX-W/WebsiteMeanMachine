@@ -10,10 +10,12 @@ body
 
 }
 
-img #logo
+#logo
 {
-    heigth: 270px;
-    width: 125px;
+    display: block;
+    width: 270px;
+    height: 125px;
+    margin: auto;
 }
 
 .clear 
@@ -41,7 +43,7 @@ ul li
     display: inline-block;
     width: 120px;
     position: relative;
-    margin-right: -4px;
+    margin-right: -4.4px;
     padding: 0;
     background-color: #FAFAFA;
     transition: all 0.2s ease-out;
@@ -55,15 +57,7 @@ ul li a
     text-align: center;
     color: #424242;
 }
-.line {
-    text-align: center;
-    display: inline;
-    width: 1px;
-    height: 60%;
-    position: absolute;
-    background-color: #424242;
-    top: 20%;
-}
+
 
 ul li:hover 
 {
@@ -74,6 +68,15 @@ ul li:hover
 ul li:hover a
 {
     color: #fff;
+}
+
+ul li .line {
+    /*display: inline;*/
+    width: 1px;
+    height: 60%;
+    position: absolute;
+    background-color: #424242;
+    top: 20%;
 }
 
 /* ===== Subnavigation ===== */
