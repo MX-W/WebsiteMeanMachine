@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><div class="line"></div><a href="#">The Band</a>
+                <li ><div class="line"></div><a href="#">The Band</a>
                     <ul>
                         <li><a href="#">Andi</a></li>
                         <li><a href="#">Daniel</a></li>

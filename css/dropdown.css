@@ -26,13 +26,14 @@ img #logo
 
 nav 
 {
-    margin: center auto;
+    margin: 0 auto;
 }
 
 /* ===== Hauptnavigation ===== */
-ul 
+ul
 {
     list-style: none;
+    text-align: center;
 }
 
 ul li 
@@ -55,11 +56,12 @@ ul li a
     color: #424242;
 }
 .line {
+    text-align: center;
     display: inline;
     width: 1px;
     height: 60%;
     position: absolute;
-    background-color: dimgray;
+    background-color: #424242;
     top: 20%;
 }
 
