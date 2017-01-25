@@ -12,10 +12,13 @@ body
 
 #logo
 {
+    z-index: 1;
+    position: relative;
     display: block;
     width: 270px;
     height: 125px;
     margin: auto;
+    align-self: center;
 }
 
 .clear 
@@ -29,6 +32,43 @@ body
 nav 
 {
     margin: 0 auto;
+}
+
+.login_container
+{
+/*    direction: rtl;*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.login_box
+{
+    height: 100px;
+    width: 600px;
+}
+
+#login_form
+{
+    z-index: 3;
+    position: absolute;
+    text-align: right;
+    font-size: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+/*    float: right;*/
+}
+
+#login_form input
+{
+    width: 100px;
+}
+
+#login_form #send
+{
+    width: 40px;
 }
 
 /* ===== Hauptnavigation ===== */
@@ -112,3 +152,5 @@ ul li:hover ul
     opacity: 1;
     display: block;
 }
+
+
