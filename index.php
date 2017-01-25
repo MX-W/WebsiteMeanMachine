@@ -48,7 +48,7 @@ if (!empty($_GET['page'])) {
         <meta name="author" content="Paul Pestov">
 
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/dropdown.css">
 
 <?php if ($cssPath != "") : ?>
             <link rel="stylesheet" href="<?php echo $cssPath; ?>">

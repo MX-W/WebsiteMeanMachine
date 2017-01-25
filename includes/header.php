@@ -1,16 +1,38 @@
+
 <header>
-    <a class="logo" href="index.php">
-        <img src="<?php echo $projectDir . "img/logo.png"; ?>" alt="Logo">
+    <a  href="index.php">
+        <img id="logo" src="<?php echo $projectDir . "img/logo.png"; ?>" alt="Logo">
     </a>
     <!--Hier spaeter Ausgabe von evtl. zwoschengespeicherten Mitteilungen einfuegen-->
-    <nav>
-        <ul>
-            <li class="<?php if ($page == 'start') echo "active"; ?>"><a href="index.php">Home</a></li>
-            <li class="<?php if ($page == 'products') echo "active"; ?>"><a href="index.php?page=band">Produkte</a></li>
-            <li class="<?php if ($page == 'about') echo "active"; ?>"><a href="index.php?page=about">About</a></li>
-            <li class="<?php if ($page == 'contact') echo "active"; ?>"><a href="index.php?page=contact">Kontakt</a></li>
-            <!--Hier spaeter Login-Prüfung und -Button einfuegen-->
-        </ul>
-    </nav> 
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><div class="line"></div><a href="#">The Band</a>
+                    <ul>
+                        <li><a href="#">Andi</a></li>
+                        <li><a href="#">Daniel</a></li>
+                        <li><a href="#">Max</a></li>
+                        <li><a href="#">Timo</a></li>
+                    </ul>
+                </li>
+                <li><div class="line"></div><a href="#">Music</a>
+                    <ul>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Soundcloud</a></li>
+                        <li><a href="#">Spotify</a></li>
+                    </ul>
+                </li>
+                <li><div class="line"></div><a href="#">Media</a>
+                    <ul>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Video</a></li>
+                    </ul>
+                </li>
+                <li><div class="line"></div><a href="#">Tourdates</a></li>
+                <li><div class="line"></div><a href="#">Shop</a></li>
+                <li><div class="line"></div><a href="#">Contact</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
     <div class="clear"></div>
 </header>
