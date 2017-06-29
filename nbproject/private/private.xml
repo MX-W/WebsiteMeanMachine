@@ -3,20 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/css/dropdown2.css</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/timo/timo.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/header.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/contact/contact.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/daniel/daniel.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/media/media.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/music/music.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/css/dropdown.css</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/band/band.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/dropdown-menu.html</file>
             <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/index.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/andi/andi.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/max/max.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/Header2.php</file>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/registration/registration.php</file>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/functions/connectDB.php</file>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/registration/functions/fetchData.php</file>
         </group>
     </open-files>
 </project-private>

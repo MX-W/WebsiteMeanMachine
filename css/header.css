@@ -1,0 +1,187 @@
+/* =================== Main navigation =================== */
+
+
+.mainMenuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #373737;
+}
+
+.mainMenuItem {
+    float: left;
+    border-left: 2px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.mainMenuItem > a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    background-color: #404040;
+    cursor: pointer;
+}
+
+.mainMenuItem:first-child {
+    border-left: none;
+}
+
+.mainMenuItem:first-child a {
+    border-radius: 5px 0 0 5px;
+}
+
+.mainMenuItem:last-child {
+    border-left: none;
+    float: right;
+}
+
+.mainMenuItem:last-child a {
+    border-radius: 5px;
+}
+
+.mainMenuItem a:hover:not(.active) {
+    background-color: #616161;
+}
+
+.mainMenuItem a.active {
+    background-color: #000000;
+    color: #FFF;
+}
+
+.lastRegularItem > a{
+    border-radius: 0 5px 5px 0;
+}
+
+/* Menu displaying at smartphone and tablet */
+@media only screen and (max-width: 765px) {
+    .mainMenuItem {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+}
+
+/* ===== Subnavigation ===== */
+
+.dropButton {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 5px 5px 5px;
+}
+
+.subMenuItem {
+    border-bottom: 1px solid black;
+}
+
+.subMenuItem:last-child {
+    border-bottom: 0;
+}
+
+.subMenuItem a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subMenuItem a:hover {
+    background-color: #616161;
+}
+
+.dropButton .subMenuItem a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropButton a:hover {
+    background-color: #f1f1f1;
+}
+
+.mainMenuItem:hover .dropButton {
+    display: block;
+}
+
+/*===========Login Form=============*/
+
+#tooltipContainer {
+    display: inline-block;
+}
+
+#loginForm {
+    display: none;
+    padding: 10px;
+    background-color: #3E7D50;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 8px;
+    left: 50%;
+    margin-left: -60px;
+}
+
+#tooltipContainer #loginForm input, #tooltipContainer #loginForm label,
+#registration, #send{
+    padding: 4px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #172E1D;
+}
+
+#tooltipContainer #loginForm label {
+    border-radius: 5px;
+}
+
+#send {
+    margin-left: 20px;
+    font-size: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#registration {
+    margin-top: 15px;
+}
+
+#send, #registration {
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#send:hover {
+    background-color: #616161;
+}
+
+
+
+#registration:hover {
+    background-color: #616161;
+    
+}
+
+#username, #password {
+    border: none;
+    border-bottom: 2px white solid;
+    border-radius: 0;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#username:focus, #password:focus {
+    border-bottom-color: blue;
+}

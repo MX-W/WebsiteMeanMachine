@@ -1,67 +1,67 @@
-<header>
+<!DOCTYPE html>
 
-
-<!--    <div class="login_container">-->
-<div class="login_container">
-        <form class="login_box" action="" method="post" type="text/plain" id="login_form">
-            <label for="benutzername">Benutzername:</label>
-            <input type="text" name="benutzername" id="benutzername">
-            <label for="passwort">Passwort:</label>
-            <input type="password" name="passwort" id="passwort">
-            <input type="submit" value="Send" id="send">
-            <div class="clear"></div>
-        </form>
-</div>
-
-        <a href="index.php">
-            <img id="logo" src="<?php echo $projectDir . "img/logo.png"; ?>" alt="Logo">
-        </a>
-        
-<!--        <form action="" method="post" type="text/plain" id="login_form">
-            <label for="benutzername">Benutzername:</label>
-            <input type="text" name="benutzername" id="benutzername">
-            <label for="passwort">Passwort:</label>
-            <input type="password" name="passwort" id="passwort">
-            <div class="clear"></div>
-        </form>-->
-
-<!--    </div>-->
-
-
-
-
-    <!--Hier spaeter Ausgabe von evtl. zwoschengespeicherten Mitteilungen einfuegen-->
-    <nav>
-        <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><div class="line"></div><a href="index.php?page=band">The Band</a>
-                <ul>
-                    <li><a href="index.php?page=andi">Andi</a></li>
-                    <li><a href="index.php?page=daniel">Daniel</a></li>
-                    <li><a href="index.php?page=max">Max</a></li>
-                    <li><a href="index.php?page=timo">Timo</a></li>
-                </ul>
-            </li>
-            <li><div class="line"></div><a href="index.php?page=music">Music</a>
-                <ul>
-                    <li><a href="index.php?page=youtube">Youtube</a></li>
-                    <li><a href="index.php?page=soundcloud">Soundcloud</a></li>
-                    <li><a href="index.php?page=spotify">Spotify</a></li>
-                </ul>
-            </li>
-            <li><div class="line"></div><a href="index.php?page=media">Media</a>
-                <ul>
-                    <li><a href="index.php?page=photos">Photos</a></li>
-                    <li><a href="index.php?page=video">Video</a></li>
-                </ul>
-            </li>
-            <li><div class="line"></div><a href="index.php?page=tourdates">Tourdates</a></li>
-            <li><div class="line"></div><a href="index.php?page=shop">Shop</a></li>
-            <li><div class="line"></div><a href="index.php?page=contact">Contact</a></li>
-        </ul>
-
-    </nav>
-
-
+<header class="header">
     
+    <!-- Navigation bar -->
+    <nav class="nav">
+        <ul class="mainMenuList col-12">
+            <li class="mainMenuItem"><a href="index.php" onclick="beActive(event.target)">Home</a></li>
+            <li class="mainMenuItem"><a href="index.php?page=band" onclick="beActive(event.target)">The Band</a>
+                <ul class="dropButton">
+                    <li class="subMenuItem"><a href="index.php?page=andi">Andi</a></li>
+                    <li class="subMenuItem"><a href="index.php?page=daniel">Daniel</a></li>
+                    <li class="subMenuItem"><a href="index.php?page=max">Max</a></li>
+                    <li class="subMenuItem"><a href="index.php?page=timo">Timo</a></li>
+                </ul>
+            </li>
+            <li class="mainMenuItem"><a href="index.php?page=music" onclick="beActive(event.target)">Music</a>
+                <ul class="dropButton">
+                    <li class="subMenuItem"><a href="index.php?page=youtube">Youtube</a></li>
+                    <li class="subMenuItem"><a href="index.php?page=soundcloud">Soundcloud</a></li>
+                    <li class="subMenuItem"><a href="index.php?page=spotify">Spotify</a></li>
+                </ul>
+            </li>
+            <li class="mainMenuItem"><a href="index.php?page=media" onclick="beActive(event.target)">Media</a>
+                <ul class="dropButton">
+                    <li class="subMenuItem"><a href="index.php?page=photos">Photos</a></li>
+                    <li class="subMenuItem"><a href="index.php?page=video">Video</a></li>
+                </ul>
+            </li>
+            <li class="mainMenuItem"><a href="index.php?page=tourdates" onclick="beActive(event.target)">Tourdates</a></li>
+            <li class="mainMenuItem"><a href="index.php?page=shop" onclick="beActive(event.target)">Shop</a></li>
+            <li class="mainMenuItem lastRegularItem"><a href="index.php?page=contact" onclick="beActive(event.target)">Contact</a></li>
+            <li class="mainMenuItem" id="tooltipContainer"><a onclick="showLogin()">Login</a>
+                
+            <!-- Login form -->
+                <form id="loginForm">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="username">Benutzername:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="username" id="username">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password">Passwort:</label>
+                            </td>
+                            <td>
+                                <input type="password" name="password" id="password">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Anmelden" id="send">
+                            </td>
+                            <td>
+                                <a id="registration" href="index.php?page=registration">Registrieren</a>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </li>
+        </ul>
+    </nav>
 </header>

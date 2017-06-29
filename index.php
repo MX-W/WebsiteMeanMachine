@@ -6,7 +6,7 @@ $projectDir = "/DM1/WebsiteMeanMachine/";
 // Der Standardwert ist der Pfad zum Inhalt der Startseite
 $pagePath = "includes/pages/start/start.php";
 
-$cssPath = "";
+$cssPath = "includes/pages/start/css/start.css";
 
 // Der Name der aktuellen Seite wird in der $page-Variable gespeichert, 
 // welche für die Anzeige des aktiven Navigationselementes benötigt wird.
@@ -45,25 +45,40 @@ if (!empty($_GET['page'])) {
         <title>WE PLAY HARD'N'HEAVY</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="author" content="Paul Pestov">
 
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="stylesheet" href="css/dropdown2.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/responsiveDesign.css">
+        <link rel="stylesheet" href="css/screen.css">
+        
+        
 
-<?php if ($cssPath != "") : ?>
+        <?php if ($cssPath != "") : ?>
             <link rel="stylesheet" href="<?php echo $cssPath; ?>">
         <?php endif; ?>
+            
+        <script type="text/javascript" src="js/active.js"></script>
+        <script type="text/javascript" src="js/showLogin.js"></script>
 
     </head>
     <body>
-        <div class="wrapper"> 
-<?php include("includes/header2.php"); ?>
-
-            <main>
-            <?php include ($pagePath); ?>
-            </main>
-
-                <?php include("includes/footer.php"); ?>
+        <div class="background">
+            <div class="col-3"></div>
+            <div class="wrapper col-6 col-s-12">
+                <div class="row">
+                    <?php include("includes/header.php"); ?>
+                    <script>setActive();</script>
+                </div>
+                <div class="row">
+                    <main>
+                        <?php include ($pagePath); ?>
+                    </main>
+                </div>
+                <div class="row">
+                    <?php include("includes/footer.php"); ?>
+                </div>            
+            </div>
+            <div class="col-3"></div>
         </div>
     </body>
 </html>

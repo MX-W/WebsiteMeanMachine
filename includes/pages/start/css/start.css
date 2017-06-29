@@ -1,0 +1,78 @@
+.slide {
+    border-radius: 5px;
+    cursor: zoom-in;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    transition: opacity 0.6s;
+}
+
+.slide:hover {
+    opacity: 1.0;
+}
+
+.slideshowContainer{
+    position: relative;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.previous:hover, .next:hover {
+    background-color: #404040;
+    opacity: 0.9;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #404040;
+}
+
+.dotContainer {
+    cursor: pointer;
+    text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .8s;
+  animation-name: fade;
+  animation-duration: .8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .1} 
+  to {opacity: .5}
+}
+
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: .5}
+}

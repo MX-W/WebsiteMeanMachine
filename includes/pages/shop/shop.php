@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+            include("includes/functions/connectDB.php");
+            include("includes/functions/closeDB.php");
         ?>
     </body>
 </html>
