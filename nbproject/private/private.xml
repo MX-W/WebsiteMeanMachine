@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/functions/login.php</file>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/functions/fetchData.php</file>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/js/registration.js</file>
             <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/index.php</file>
             <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/registration/registration.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/functions/connectDB.php</file>
-            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/includes/pages/registration/functions/fetchData.php</file>
+            <file>file:/D:/xampp/htdocs/DM1/WebsiteMeanMachine/css/screen.css</file>
         </group>
     </open-files>
 </project-private>

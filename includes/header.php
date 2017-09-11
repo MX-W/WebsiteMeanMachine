@@ -29,11 +29,12 @@
             </li>
             <li class="mainMenuItem"><a href="index.php?page=tourdates" onclick="beActive(event.target)">Tourdates</a></li>
             <li class="mainMenuItem"><a href="index.php?page=shop" onclick="beActive(event.target)">Shop</a></li>
-            <li class="mainMenuItem lastRegularItem"><a href="index.php?page=contact" onclick="beActive(event.target)">Contact</a></li>
+            <li class="mainMenuItem"><a href="index.php?page=contact" onclick="beActive(event.target)">Contact</a></li>
+            <li class="mainMenuItem lastRegularItem"><a href="index.php?page=profile">Profile</a></li>
             <li class="mainMenuItem" id="tooltipContainer"><a onclick="showLogin()">Login</a>
                 
             <!-- Login form -->
-                <form id="loginForm">
+                <form method="POST" id="loginForm" action="includes/functions/login.php">
                     <table>
                         <tr>
                             <td>

@@ -1,6 +1,6 @@
 <?php
     if(mysqli_close($conn)) {
-        echo "Verbindung getrennt";
+        return true;
     }
     else
     {

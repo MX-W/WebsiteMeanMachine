@@ -1,8 +1,5 @@
 <p>Das ist die Registration</p>
 
-<?php
-include ("functions/fetchData.php");
-?>
 <form action="post" type="text/plain" target="registration.php">
     <table border="0">
         <tr>
@@ -10,7 +7,7 @@ include ("functions/fetchData.php");
                 <label for="usernameReg">Benutzername: </label>
             </td>
             <td>
-                <input type="text" name="usernameReg" id="usernameReg"/>
+                <input type="text" name="usernameReg" id="usernameReg" onfocusout='javascript:searchDB("username")'/>
             </td>
         </tr>
         <tr>
@@ -27,6 +24,15 @@ include ("functions/fetchData.php");
             </td>
             <td>
                 <input type="password" name="passwordReg" id="passwordReg"/>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <label for="passwordReg2">Passwort bestätigen: </label>
+            </td>
+            <td>
+                <input type="password" name="passwordReg2" id="passwordReg2"/>
             </td>
         </tr>
         <tr>

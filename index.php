@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Variable zum Projektverzeichnis, welches unter 'htdocs' liegt (Hinweis: falls das Projekt im ROOT-Verzeichnis liegt, einen Leerstring eintragen.)
 $projectDir = "/DM1/WebsiteMeanMachine/";
 
@@ -37,7 +38,6 @@ if (!empty($_GET['page'])) {
         $cssPath = "";
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -59,6 +59,7 @@ if (!empty($_GET['page'])) {
             
         <script type="text/javascript" src="js/active.js"></script>
         <script type="text/javascript" src="js/showLogin.js"></script>
+        <script type="text/javascript" src="js/registration.js"></script>
 
     </head>
     <body>
