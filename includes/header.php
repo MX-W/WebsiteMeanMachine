@@ -5,8 +5,8 @@
     <!-- Navigation bar -->
     <nav class="nav">
         <ul class="mainMenuList col-12">
-            <li class="mainMenuItem"><a href="index.php" onclick="beActive(event.target)">Home</a></li>
-            <li class="mainMenuItem"><a href="index.php?page=band" onclick="beActive(event.target)">The Band</a>
+            <li class="mainMenuItem"><a id="start" href="index.php">Home</a></li>
+            <li class="mainMenuItem"><a id="band" href="index.php?page=band" >The Band</a>
                 <ul class="dropButton">
                     <li class="subMenuItem"><a href="index.php?page=andi">Andi</a></li>
                     <li class="subMenuItem"><a href="index.php?page=daniel">Daniel</a></li>
@@ -14,23 +14,17 @@
                     <li class="subMenuItem"><a href="index.php?page=timo">Timo</a></li>
                 </ul>
             </li>
-            <li class="mainMenuItem"><a href="index.php?page=music" onclick="beActive(event.target)">Music</a>
+            <li class="mainMenuItem"><a id="youtube" href="index.php?page=youtube" >Music</a>
                 <ul class="dropButton">
                     <li class="subMenuItem"><a href="index.php?page=youtube">Youtube</a></li>
-                    <li class="subMenuItem"><a href="index.php?page=soundcloud">Soundcloud</a></li>
                     <li class="subMenuItem"><a href="index.php?page=spotify">Spotify</a></li>
                 </ul>
             </li>
-            <li class="mainMenuItem"><a href="index.php?page=media" onclick="beActive(event.target)">Media</a>
-                <ul class="dropButton">
-                    <li class="subMenuItem"><a href="index.php?page=photos">Photos</a></li>
-                    <li class="subMenuItem"><a href="index.php?page=video">Video</a></li>
-                </ul>
-            </li>
-            <li class="mainMenuItem"><a href="index.php?page=tourdates" onclick="beActive(event.target)">Tourdates</a></li>
-            <li class="mainMenuItem"><a href="index.php?page=shop" onclick="beActive(event.target)">Shop</a></li>
-            <li class="mainMenuItem"><a href="index.php?page=contact" onclick="beActive(event.target)">Contact</a></li>
-            <li class="mainMenuItem lastRegularItem"><a href="index.php?page=profile">Profile</a></li>
+            <li class="mainMenuItem"><a id="photos" href="index.php?page=photos" >Photos</a></li>
+            <li class="mainMenuItem"><a id="tourdates" href="index.php?page=tourdates" >Tourdates</a></li>
+            <li class="mainMenuItem"><a id="shop" href="index.php?page=shop" >Shop</a></li>
+            <li class="mainMenuItem"><a id="contact" href="index.php?page=contact">Contact</a></li>
+            <li class="mainMenuItem lastRegularItem"><a id="profile" href="index.php?page=profile">Profile</a></li>
             <li class="mainMenuItem" id="tooltipContainer"><a onclick="showLogin()">Login</a>
                 
             <!-- Login form -->

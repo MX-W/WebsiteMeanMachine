@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 29. Jun 2017 um 14:17
+-- Erstellungszeit: 15. Sep 2017 um 16:29
 -- Server-Version: 10.1.16-MariaDB
 -- PHP-Version: 7.0.9
 
@@ -61,6 +61,14 @@ CREATE TABLE `products` (
   `remaining` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Daten für Tabelle `products`
+--
+
+INSERT INTO `products` (`prod_id`, `prod_name`, `category_id`, `price`, `notes`, `remaining`) VALUES
+(1, 'T-Shirt', 1, '14,99', 'Das neuste T-Shirt von uns.', 10),
+(2, 'Album 1', 2, '7,99', 'Unsere erste CD', 200);
+
 -- --------------------------------------------------------
 
 --
@@ -88,10 +96,18 @@ CREATE TABLE `users` (
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(30) NOT NULL,
   `email` varchar(60) NOT NULL,
-  `adress` varchar(50) NOT NULL,
+  `street` varchar(50) NOT NULL,
+  `number` varchar(4) NOT NULL DEFAULT '',
   `zip` int(9) NOT NULL,
   `phone` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This table contains all users with their information';
+
+--
+-- Daten für Tabelle `users`
+--
+
+INSERT INTO `users` (`user_id`, `username`, `password`, `firstname`, `lastname`, `email`, `street`, `number`, `zip`, `phone`) VALUES
+(6, 'max', '123', '123', '123', 'max.wendl@fh-erfurt.de', '123', '123', 123, 123);
 
 --
 -- Indizes der exportierten Tabellen
@@ -115,8 +131,18 @@ ALTER TABLE `shows`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`),
-  ADD UNIQUE KEY `email-key` (`email`);
+  ADD UNIQUE KEY `email-key` (`email`),
+  ADD KEY `user_id` (`user_id`);
 
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

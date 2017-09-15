@@ -1,7 +1,7 @@
 <?php
 session_start();
 // Variable zum Projektverzeichnis, welches unter 'htdocs' liegt (Hinweis: falls das Projekt im ROOT-Verzeichnis liegt, einen Leerstring eintragen.)
-$projectDir = "/DM1/WebsiteMeanMachine/";
+$projectDir = "WebsiteMeanMachine/";
 
 // Pfadvariable, die zur Steuerung der Inhalt verwendet wird
 // Der Standardwert ist der Pfad zum Inhalt der Startseite
@@ -46,29 +46,40 @@ if (!empty($_GET['page'])) {
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+        <!-- Tab icon -->
         <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/responsiveDesign.css">
+        
+        <!-- Webfonts -->
+        <link href="https://fonts.googleapis.com/css?family=BenchNine|Cinzel" rel="stylesheet">
+        
+        <!-- Library for Social Media Buttons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- CSS for every page -->
         <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/responsiveDesign.css">
         
-        
-
+        <!-- special CSS for subpage -->
         <?php if ($cssPath != "") : ?>
             <link rel="stylesheet" href="<?php echo $cssPath; ?>">
         <?php endif; ?>
             
+        
+        
+        <!-- Javascript for every page -->
         <script type="text/javascript" src="js/active.js"></script>
-        <script type="text/javascript" src="js/showLogin.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
         <script type="text/javascript" src="js/registration.js"></script>
 
     </head>
     <body>
-        <div class="background">
+        <div class="col-12 background">
             <div class="col-3"></div>
             <div class="wrapper col-6 col-s-12">
                 <div class="row">
                     <?php include("includes/header.php"); ?>
-                    <script>setActive();</script>
                 </div>
                 <div class="row">
                     <main>
@@ -81,5 +92,7 @@ if (!empty($_GET['page'])) {
             </div>
             <div class="col-3"></div>
         </div>
+        <script>setActive( <?php echo "'".$page."'"; ?> );</script>
     </body>
 </html>
+

@@ -10,8 +10,16 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <div class="row videoWrapper">
+            <iframe  src="https://youtube.com/embed/uA0Bbb_etaI"></iframe>
+        </div>
+        
+        <div class="row videoWrapper">
+            <iframe src="https://www.youtube.com/embed/DfRvpz38IO4"></iframe>
+        </div>
+        
+        <div class="row videoWrapper">
+            <iframe src="https://www.youtube.com/embed/pcZslfLAMEQ"></iframe>
+        </div>
     </body>
 </html>

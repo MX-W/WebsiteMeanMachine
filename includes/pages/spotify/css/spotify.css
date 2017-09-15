@@ -1,0 +1,13 @@
+iframe {
+    display: block;
+    margin: auto;
+}
+
+table {
+    border: 0;
+    margin-bottom: 25px;
+}
+
+#note {
+    vertical-align: top; 
+}

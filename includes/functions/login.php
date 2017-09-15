@@ -5,7 +5,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 include("connectDB.php");
-$getUserQuery = "SELECT user_id, password FROM users WHERE username='" . $username . "'";
+$getUserQuery = "SELECT user_id, password FROM users WHERE username='" . $username . "' AND password='". $password . "'";
 $currentUserArray = mysqli_query($conn, $getUserQuery)
 or die("SQL-Anweisung fehlgeschlagen" . mysqli_error($conn));
 
@@ -18,5 +18,7 @@ if ($currentUser !== false && strcmp($password, $currentUser['password']) == 0) 
     $userID = $currentUser['user_id'];
     $_SESSION['userid'] = $userID;
     
-    header('Location: ../../index.php?page=profile'); 
+    header('Location: ../../index.php?page=profile');
+}else {
+    
 }

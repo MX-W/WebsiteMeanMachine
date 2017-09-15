@@ -1,0 +1,60 @@
+footer {
+    margin-top: 25px;
+    background-color: #5C6266;
+}
+
+footer span
+{
+    line-height: 42px;
+    vertical-align: middle;
+    padding-left: 10px;
+    color: #9E9E9E;
+    font-size: 11px;
+}
+
+.footerLink {
+    color: #9E9E9E;
+    background-color: #5C6266;
+    font-size: 11px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.mediaButton {
+    margin: 5px 3px 5px 3px;
+}
+
+.mediaButton:hover {
+    opacity: .7;
+}
+
+#soundcloud {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    float: right;
+    border-radius: 5px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-right: 5px;
+}
+
+.fa {
+    padding-top: 7px;
+    height: 32px;
+    font-size: 20px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    float: right;
+}
+
+.fa-youtube {
+    background: #FF0000;
+    color: white;
+}

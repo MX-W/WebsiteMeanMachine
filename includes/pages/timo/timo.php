@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-        <div>das ist Timo</div>
-        <?php
-        // put your code here
-        ?>
-    </body>
-</html>
+<link rel="stylesheet" href="css/bandMember.css">
+<div class="row">
+    <div class="col-3"></div>
+    <h1 class="col-6">Timo Schlosser</h1>
+    <div class="col-3"></div>
+</div>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+        <img src="img/Portrait/Timo.jpg">
+    </div>
+    <div class="col-8">
+        <p>
+            Timo spielt seit 10 Jahren Gitarre. Er singt ebenfalls für die Band.
+            Außerdem ist er der PR-Manager.
+        </p>
+    </div>
+</div>

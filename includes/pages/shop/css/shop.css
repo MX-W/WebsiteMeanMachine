@@ -1,0 +1,28 @@
+table {
+    color: #000;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.row {
+    overflow-x: auto;
+}
+
+#name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#price {
+    font-size: 11px;
+    text-align: right;
+}
+
+#notes {
+    font-size: 14.5px;
+    text-align: left;
+}
+
+#amount {
+    font-size: 12px;
+}

@@ -3,12 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var activeTarget;
 
-function beActive(target) {
-    activeTarget = target;
-}
-
-function setActive() {
-    activeTarget.className += " active";
+function setActive(targetID) {
+    document.getElementById(targetID).classList.add('active');
 }

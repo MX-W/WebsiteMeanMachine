@@ -10,7 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <div>12345</div>
+        <div>contact</div>
         <?php
         // put your code here
         ?>

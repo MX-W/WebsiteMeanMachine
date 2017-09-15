@@ -1,0 +1,16 @@
+.img {
+    border-top-left-radius: 120px; 
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-top: 10px;
+}
+.img:hover {
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px; 
+    border-top-left-radius: 15px; 
+    border-bottom-right-radius: 15px;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    cursor: pointer;
+}

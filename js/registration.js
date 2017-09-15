@@ -24,7 +24,7 @@ function searchDB(type) {
         username = encodeURIComponent(username);
         var params = "q=" + username;
 
-        xhttp.open("POST", "http://localhost/DM1/WebsiteMeanMachine/includes/functions/fetchData.php", true);
+        xhttp.open("POST", "http://localhost/WebsiteMeanMachine/includes/functions/fetchData.php", true);
 
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.setRequestHeader("Content-length", params.length);
